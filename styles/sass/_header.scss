@@ -1,3 +1,77 @@
+// index.html SCSS
+
+header {
+    background-image: url(../assets/bar-one/home-image-1.jpg);
+    height: 95vh;
+    position: relative;
+    z-index: -2;
+
+    img {
+        max-width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: -120px;
+        z-index: -1;
+    }
+
+    nav ~ div {
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 75vh;
+
+        h2 {
+            width: 380px;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+    }
+
+    li {
+        font: 700 3.8rem 'Chathura', sans-serif;
+        list-style: none;
+        line-height-step: 29px;
+        letter-spacing: 1.9px;
+        text-transform: uppercase;
+        flex-shrink: 0;
+        padding: 0 20px;
+
+        &:nth-of-type(3n) {
+            font: 400 4.8rem 'Tulpen One', cursive;
+            letter-spacing: 2.4px;
+            text-transform: none;
+        }
+    }
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+        padding: 0 20px;
+
+        &:hover,
+        &:focus {
+            color: #FF8327;
+        }
+    }
+}
+
 h1 {
-    background-color: royalblue;
+    color: #FF8327;
+    font: 400 26.14rem 'Tulpen One', cursive;
+    margin: 0;
+    padding: 0;
+    height: 210px;
 }

@@ -235,6 +235,132 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  color: #FFF;
+  font: 700 8.32rem 'Chathura', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 94.7px;
+  letter-spacing: 2.6px;
+}
+
+p {
+  color: #FFF;
+}
+
+header {
+  background-image: url(../assets/bar-one/home-image-1.jpg);
+  height: 95vh;
+  position: relative;
+  z-index: -2;
+}
+
+header img {
+  max-width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -120px;
+  z-index: -1;
+}
+
+header nav ~ div {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75vh;
+}
+
+header nav ~ div h2 {
+  width: 380px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+nav li {
+  font: 700 3.8rem 'Chathura', sans-serif;
+  list-style: none;
+  line-height-step: 29px;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 20px;
+}
+
+nav li:nth-of-type(3n) {
+  font: 400 4.8rem 'Tulpen One', cursive;
+  letter-spacing: 2.4px;
+  text-transform: none;
+}
+
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+nav a:hover, nav a:focus {
+  color: #FF8327;
+}
+
 h1 {
-  background-color: royalblue;
+  color: #FF8327;
+  font: 400 26.14rem 'Tulpen One', cursive;
+  margin: 0;
+  padding: 0;
+  height: 210px;
+}
+
+.mainContainerOne {
+  background: #111010;
+}
+
+h3 {
+  font: 700 6.8rem 'Chathura', sans-serif;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainerThree h3 {
+  font: 700 6.8rem 'Chathura', sans-serif;
+  color: #FF8327;
+  margin: 0;
+  padding: 0;
 }
