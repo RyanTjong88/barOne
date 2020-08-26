@@ -4,8 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar One Blog</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+
+    <script src="https://kit.fontawesome.com/13ec76fdc2.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Chathura', sans-serif; -->
+
+    <!-- font-family: 'Tulpen One', cursive; -->
+
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">about</a></li>
+                <li class="logo"><a href="index.html">Bar-One</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <h2>Blog</h2>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <div>
+                <img src="./assets/bar-one/sidebar-image.jpg" alt="ppuring a beer from the tap">
+            </div>
+            <h3>Our Mission</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui voluptate necessitatibus autem.</p>
+            <a href="#">Find out more.</a>
+
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+        </aside>
+
+        <article>
+            <div>
+                <img src="./assets/bar-one/post-image.jpg" alt="several different appetizers">
+            </div>
+            <div>
+                <h3>New menu!</h3>
+                <p>Monday January 30, 2020 by Saron</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla magni mollitia eos? Ipsam incidunt, quae minus saepe voluptatibus commodi nobis enim reprehenderit corrupti. Nulla beatae ullam provident architecto deleniti?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat optio labore, adipisci voluptatem obcaecati impedit quos in nulla nemo culpa omnis totam, quia ducimus aut officiis explicabo est! Amet deserunt fugiat possimus. Neque doloribus repellendus est quo, similique nisi non culpa, nihil unde repudiandae consequatur!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde maiores libero molestiae tempora fugiat vitae fuga expedita numquam perspiciatis nostrum exercitationem eum a officia ipsum, eligendi saepe voluptatibus magnam tenetur eos recusandae. Sapiente qui quisquam sequi temporibus eos maiores, vitae culpa distinctio pariatur possimus blanditiis similique molestias, alias animi laborum minus officiis soluta incidunt! Nam, odio beatae! Veritatis, quam voluptate quasi dignissimos, aspernatur aliquam nisi libero optio itaque odio iure?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita nisi libero nulla reiciendis neque quibusdam quae sunt. Nisi, aspernatur nobis numquam sequi asperiores similique?</p>
+            </div>
+            <div>
+                <h3>Comments:</h3>
+                <div>
+                    <img src="./assets/bar-one/comment-image-1.jpg" alt=" headshot of woman posing">
+                    <div>
+                        <h4>Tuesday October 9th, 2020 by Sulaire</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo officia illum minus corporis itaque voluptas recusandae veniam quos. Iure soluta est perferendis, doloribus veritatis dolorum, optio, voluptate porro minima id debitis ratione incidunt odio.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/bar-one/comment-image-2.jpg" alt="headshot of male posing">
+                    <div>
+                        <h4>Wednesday October 10th, 2020 by Renzo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam accusantium suscipit sint? Vitae temporibus pariatur nulla asperiores ea! Vero, unde!</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <section>
+            <form action="#" method="#" class="myForm" name="myForm">
+                    
+                <label for="userName" class="sr-only">Name</label>
+                <input type="text" id="userName" name="userName" placeholder="Name" required>
+
+                <label for="userEmail" class="sr-only">Email Address</label>
+                <input type="email" id="userEmail" name="userEmail" placeholder="Email address" required>
+                <div>
+                    <label for="feedback" class="sr-only">Message</label>
+
+                    <!-- css property resize: none; removees option to amke box bigger -->
+                    <textarea name="userFeedback" id="feedback" cols="30" rows="10" minlength="5" maxlength="200">Comment</textarea>
+                </div>
+
+                <button input type="submit">Post Comment</button>
+            </form>
+        </section>
+        <p>Copyright &#169; 2020 Juno College</p>
+    </footer>
     
 </body>
 </html>

@@ -24,11 +24,13 @@
     <header>
         <div class="wrapper">
             <nav>
-                <li><a href="index.html">home</a></li>
-                <li><a href="">about</a></li>
-                <li class="logo"><a href="index.html">Bar-One</a></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li class="logo"><a href="index.html">Bar-One</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
             </nav>
             <h2>Get in Touch</h2>
         </div>
@@ -58,19 +60,19 @@
             <div>
                 <form action="#" method="#" class="myForm" name="myForm">
                     
-                    <label for="userName"></label>
-                    <input type="text" id="userName" name="userName" placeholder="Name">
+                    <label for="userName" class="sr-only">Name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Name" required>
 
-                    <label for="userEmail"></label>
-                    <input type="email" id="userEmail" name="userEmail" placeholder="Email address">
+                    <label for="userEmail" class="sr-only">Email Address</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Email address" required>
                     <div>
-                        <label for="feedback"></label>
-                        <textarea name="userFeedback" id="feedback" cols="30" rows="10" minlength="5" maxlength="200">
-                            Message
-                        </textarea>
+                        <label for="feedback" class="sr-only">Message</label>
+
+                        <!-- css property resize: none; removees option to amke box bigger -->
+                        <textarea name="userFeedback" id="feedback" cols="30" rows="10" minlength="5" maxlength="200">Message</textarea>
                     </div>
 
-                    <input type="submit">
+                    <button input type="submit">Submit</button>
                 </form>
             </div>
         </section>
