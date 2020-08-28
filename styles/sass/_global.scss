@@ -1,5 +1,12 @@
 html {
-    font-size: 62.5%;
+    // equivalent to 10px
+    font-size: 62.5%; 
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -7,18 +14,23 @@ h2 {
     font: 700 8.32rem 'Chathura', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 94.7px;
+    line-height: 9.47rem;
     letter-spacing: 2.6px;
 }
 
-@mixin textColor($textColor) {
+// h3 rule
+@mixin h3Color($textColor) {
     font: 700 6.8rem 'Chathura', sans-serif;
     color: $textColor;
     margin: 0;
     padding: 0;
 }
 
-
 p {
     color: #FFF;
+    font: 400 3.9rem 'Chathura', sans-serif;
+    line-height: 3rem;
+    letter-spacing: 1.9px;
+    padding: 0;
+    margin: 0;
 }
