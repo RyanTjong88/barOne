@@ -21,43 +21,54 @@
 </head>
 <body>
 
-    <header>
-        <div class="wrapper">
+    <header class="contact">
+        <section class="wrapper">
             <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="">about</a></li>
-                    <li class="logo"><a href="index.html">Bar-One</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                <ul class="mainMenu">
+                    <li class="hide"><a href="index.html">home</a></li>
+                    <li class="hide"><a href="">about</a></li>
+                    <li class="logo"><a class="logoA" href="index.html">Bar-One</a>
+                        <ul class="subMenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="hide"><a href="blog.html">blog</a></li>
+                    <li class="hide"><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
-            <h2>Get in Touch</h2>
-        </div>
+            <div>
+                <h2>Get in Touch</h2>
+            </div>
+        </section>
     </header>
 
     <footer>
         <section class="wrapper">
-            <ul class="socialMedia">
-                <li>
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.whatsapp.com/?lang=en"><i class="fab fa-whatsapp"></i></a>
-                </li>
-            </ul>
-            <p>info@email.com</p>
-            <p>123 - 456 - 7890</p>
-            <p>123 Queen Street West, Unit 10</p>
-            <p>Toronto, Ontario</p>
-            <p>M5V2D5</p>
             <div>
+                <ul class="socialMedia">
+                    <li>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com/?lang=en"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <p>info@email.com</p>
+                <p>123 - 456 - 7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </div>
+            <div class="form">
                 <form action="#" method="#" class="myForm" name="myForm">
                     
                     <label for="userName" class="sr-only">Name</label>
@@ -76,7 +87,7 @@
                 </form>
             </div>
         </section>
-        <p>Copyright &#169; 2020 Juno College</p>
+        <p class="copyright">Copyright &#169; 2020 Juno College</p>
     </footer>
 </body>
 </html>

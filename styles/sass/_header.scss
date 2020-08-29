@@ -50,7 +50,7 @@ nav {
         
         padding: 0 20px;        
 
-        &:nth-of-type(3n) {
+        .logoA {
             font: 400 4.8rem 'Tulpen One', cursive;
             letter-spacing: 2.4px;
             text-transform: none;
@@ -75,4 +75,49 @@ h1 {
     color: #FF8327;
     font: 400 26.14rem 'Tulpen One', cursive;
     height: 210px;
+}
+
+//  Drop Down Menu
+
+.logo {
+    position: relative;
+}
+
+.subMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+
+    display: none;
+}
+
+.mainMenu .logo:hover .subMenu,
+.mainMenu .logo:focus-within .subMenu {
+    height: auto;
+}
+
+// contact.html SCSS
+
+.contact {
+    background-image: url(../assets/bar-one/contact-header-1.jpg);
+    background-size: cover;
+    height: 70vh;
+
+    nav ~ div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start ;
+        height: 38vh;
+    }
+
+    h2 {
+        display: flex;
+        align-items: flex-end;
+        height: 55%;
+    }
 }

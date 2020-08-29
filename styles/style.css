@@ -294,6 +294,12 @@ button:hover, button:focus {
   color: black;
 }
 
+.copyright {
+  background-color: #2e2c2c;
+  padding: 10px;
+  text-align: center;
+}
+
 header {
   background-image: url(../assets/bar-one/home-image-1.jpg);
   height: 95vh;
@@ -365,7 +371,7 @@ nav li {
   padding: 0 20px;
 }
 
-nav li:nth-of-type(3n) {
+nav li .logoA {
   font: 400 4.8rem 'Tulpen One', cursive;
   letter-spacing: 2.4px;
   text-transform: none;
@@ -389,6 +395,64 @@ h1 {
   color: #FF8327;
   font: 400 26.14rem 'Tulpen One', cursive;
   height: 210px;
+}
+
+.logo {
+  position: relative;
+}
+
+.subMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  display: none;
+}
+
+.mainMenu .logo:hover .subMenu,
+.mainMenu .logo:focus-within .subMenu {
+  height: auto;
+}
+
+.contact {
+  background-image: url(../assets/bar-one/contact-header-1.jpg);
+  background-size: cover;
+  height: 70vh;
+}
+
+.contact nav ~ div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 38vh;
+}
+
+.contact h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 55%;
 }
 
 .mainContainerOne {
@@ -572,10 +636,44 @@ footer .wrapper img {
   width: calc((100% / 3) - 25px);
 }
 
-footer p {
+footer {
   background-color: #181717;
-  padding: 10px;
-  text-align: center;
+}
+
+footer .wrapper {
+  padding-bottom: 0;
+  height: 470px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  font-size: 3rem;
+  padding-right: 20px;
+  height: 40px;
+}
+
+footer ul li a {
+  color: #FFF;
+  padding: 0;
+}
+
+footer p:nth-of-type(1) {
+  padding: 20px 0;
+}
+
+footer .form {
+  background-color: #220303;
+  width: 65%;
+  height: 500px;
+  position: relative;
+  bottom: 250px;
+  -webkit-box-shadow: #FF8327 20px 20px;
+          box-shadow: #FF8327 20px 20px;
 }
 
 @media (max-width: 1041px) {
@@ -600,9 +698,6 @@ footer p {
   nav li {
     padding: 0 10px;
   }
-  .mainContainerOne {
-    z-index: 0;
-  }
   .mainContainerOne .wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -620,19 +715,27 @@ footer p {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  header nav {
+    height: 240px;
+  }
   header nav a {
     padding: 0;
   }
   header h1 {
     font-size: 18rem;
+    height: 160px;
   }
   header h2 {
     width: 80%;
     text-align: center;
+    height: 170px;
   }
   header img {
-    position: static;
-    width: 100%;
+    bottom: 5px;
+    right: 5%;
+  }
+  .mainContainerThree .contentOne h3 {
+    padding: 80px 0 50px;
   }
   footer .wrapper {
     -webkit-box-orient: vertical;
@@ -652,8 +755,27 @@ footer p {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   p {
-    font-size: 3.2rem;
+    font-size: 3.4rem;
     text-align: center;
+  }
+  header img {
+    width: 90%;
+    border: double 10px #ff8327;
+  }
+  nav {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 40px 0 0;
+  }
+  nav .mainMenu .hide {
+    display: none;
+  }
+  nav .mainMenu .logoA {
+    font-size: 8rem;
+  }
+  nav .mainMenu .subMenu {
+    display: inherit;
   }
   .mainContainerOne .iconContent {
     -webkit-box-align: center;

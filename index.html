@@ -27,12 +27,19 @@
     <header>
         <div class="wrapper">
             <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="">about</a></li>
-                    <li class="logo"><a href="index.html">Bar-One</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                <ul class="mainMenu">
+                    <li class="hide"><a href="index.html">home</a></li>
+                    <li class="hide"><a href="">about</a></li>
+                    <li class="logo"><a class="logoA" href="index.html">Bar-One</a>
+                        <ul class="subMenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="hide"><a href="blog.html">blog</a></li>
+                    <li class="hide"><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
             <div>
@@ -130,7 +137,7 @@
             <img src="./assets/bar-one/gallery-image-2.jpg" alt="burger and fries on a plate">
             <img src="./assets/bar-one/gallery-image-3.jpg" alt="tall ceasar on the bar">
         </section>
-        <p>Copyright &#169; 2020 Juno College</p>
+        <p class="copyright">Copyright &#169; 2020 Juno College</p>
     </footer>
 </body>
 </html>
