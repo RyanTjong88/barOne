@@ -1,0 +1,21 @@
+footer {
+    background-color: #220303;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+
+        img {
+            display: flex;
+            justify-content: space-between;
+            width: calc((100% / 3) - 25px);
+        }
+    }
+
+    p {
+        background-color: #181717;
+        padding: 10px;
+        text-align: center;
+    }
+}

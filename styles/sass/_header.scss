@@ -5,10 +5,10 @@ header {
     height: 95vh;
 
     img {
-        max-width: 50%;
+        width: 50%;
         position: absolute;
         right: 0;
-        bottom: -120px;
+        bottom: -60px;
     }
 
     nav ~ div {
@@ -36,16 +36,19 @@ nav {
         justify-content: space-evenly;
         align-items: center;
         width: 50%;
+
+        .logo {
+            flex-shrink: 0;
+        }
     }
 
     li {
-        font: 700 3.8rem 'Chathura', sans-serif;
-        list-style: none;
+        font-size: 3.8rem;
         line-height: 29px;
         letter-spacing: 1.9px;
         text-transform: uppercase;
-        flex-shrink: 0;
-        padding: 0 20px;
+        
+        padding: 0 20px;        
 
         &:nth-of-type(3n) {
             font: 400 4.8rem 'Tulpen One', cursive;
@@ -58,6 +61,8 @@ nav {
         color: #FFF;
         text-decoration: none;
         padding: 0 20px;
+        transition: color 1s;
+        flex-shrink: 1;
 
         &:hover,
         &:focus {
@@ -69,7 +74,5 @@ nav {
 h1 {
     color: #FF8327;
     font: 400 26.14rem 'Tulpen One', cursive;
-    margin: 0;
-    padding: 0;
     height: 210px;
 }

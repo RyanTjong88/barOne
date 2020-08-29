@@ -1,6 +1,12 @@
 html {
     // equivalent to 10px
-    font-size: 62.5%; 
+    font-size: 62.5%;
+}
+
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font: 700 1rem 'Chathura', sans-serif;;
 }
 
 .wrapper {
@@ -9,21 +15,25 @@ html {
     margin: 0 auto;
 }
 
+li {
+    list-style: none;
+}
+
 h2 {
     color: #FFF;
-    font: 700 8.32rem 'Chathura', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 8.32rem;
     line-height: 9.47rem;
     letter-spacing: 2.6px;
 }
 
-// h3 rule
+h3 {
+    font-size: 6.8rem;
+    line-height: 5.8rem;
+    letter-spacing: 2.2px;
+}
+
 @mixin h3Color($textColor) {
-    font: 700 6.8rem 'Chathura', sans-serif;
     color: $textColor;
-    margin: 0;
-    padding: 0;
 }
 
 p {
@@ -31,6 +41,23 @@ p {
     font: 400 3.9rem 'Chathura', sans-serif;
     line-height: 3rem;
     letter-spacing: 1.9px;
-    padding: 0;
-    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    background-color: #bf2603;
+    color: #FFF;
+    border: none;
+    font: 400 3.9rem 'Tulpen One', cursive;
+    line-height: 3rem;
+    letter-spacing: 1.9px;
+    padding: 12px 35px;
+    margin: 35px 0 90px;
+    transition: background-color 2s, color 2s;
+
+    &:hover,
+    &:focus {
+        background-color: #FF8327;
+        color: black;
+    }
 }

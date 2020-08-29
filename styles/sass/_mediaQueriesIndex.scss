@@ -1,0 +1,126 @@
+@media (max-width: 1041px) {
+
+    // main / sectionThree
+    .mainContainerThree {
+
+        .contentTwo {
+            justify-content: center;
+            text-align: center;
+
+            img {
+                box-shadow: none;
+                border: double 10px #ff8327;
+            }
+            
+            div:last-child {
+                padding-left: 0;
+            }
+        }
+    }
+    
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+// header
+
+    nav {
+
+        li {
+            padding: 0 10px;
+        }
+    }
+
+// main / sectionOne
+
+    .mainContainerOne {
+        z-index: 0;
+
+        .wrapper {
+            justify-content: center;
+        
+            .iconContent {
+                min-width: 80%;
+            }
+        }
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+// header
+
+    header {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        nav {
+
+            a {
+                padding: 0;
+            }
+        }
+
+        h1 {
+            font-size: 18rem;
+        }
+
+        h2 {
+            width: 80%;
+            text-align: center;
+        }
+
+        img {
+            position: static;
+            width: 100%;
+        }
+    }
+    
+
+// footer
+
+    footer {
+        
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            
+            img {
+                border: double 10px #ff8327;
+                width: 70%;
+            }
+        }
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    
+// global
+
+    p {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+// main / sectionOne
+
+    .mainContainerOne {
+
+        .iconContent {
+            align-items: center;
+
+            h3, p {
+                padding-left: 0;
+            }
+
+            i {
+                position: static;
+                margin: 0 auto;
+            }
+        }
+    }
+}
