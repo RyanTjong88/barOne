@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <header class="contact">
+    <header class="contactHeader">
         <section class="wrapper">
             <nav>
                 <ul class="mainMenu">
@@ -45,7 +45,7 @@
         </section>
     </header>
 
-    <footer>
+    <footer class="contactFooter">
         <section class="wrapper">
             <div>
                 <ul class="socialMedia">
@@ -70,17 +70,19 @@
             </div>
             <div class="form">
                 <form action="#" method="#" class="myForm" name="myForm">
-                    
-                    <label for="userName" class="sr-only">Name</label>
-                    <input type="text" id="userName" name="userName" placeholder="Name" required>
 
-                    <label for="userEmail" class="sr-only">Email Address</label>
-                    <input type="email" id="userEmail" name="userEmail" placeholder="Email address" required>
-                    <div>
+                    <div class="nameEmail">
+                        <label for="userName" class="sr-only">Name</label>
+                        <input type="text" id="userName" name="userName" placeholder="Name" required>
+
+                        <label for="userEmail" class="sr-only">Email Address</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="Email address" required>
+                    </div>
+                    <div class="message">
                         <label for="feedback" class="sr-only">Message</label>
 
                         <!-- css property resize: none; removees option to amke box bigger -->
-                        <textarea name="userFeedback" id="feedback" cols="30" rows="10" minlength="5" maxlength="200">Message</textarea>
+                        <textarea name="userFeedback" id="feedback" cols="30" rows="10" minlength="5" maxlength="200" placeholder="Message"></textarea>
                     </div>
 
                     <button input type="submit">Submit</button>

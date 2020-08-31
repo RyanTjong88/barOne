@@ -46,6 +46,7 @@
         }
     }
 }
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
@@ -55,13 +56,17 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        height: 70vh;
 
         nav {
-            height: 240px;
 
             a {
                 padding: 0;
             }
+
+            // ~ div {
+            //     height: max-content;
+            // }
         }
 
         h1 {
@@ -70,14 +75,15 @@
         }
 
         h2 {
-            width: 80%;
             text-align: center;
+            width: 80%;
             height: 170px;
         }
 
         img {
-            bottom: 5px;
+            bottom: 130px;
             right: 5%;
+            width: 90%;
         }
     }
 
@@ -108,6 +114,51 @@
             }
         }
     }
+
+// Contact Header
+    .contactHeader {
+        height: 50vh;
+
+        nav ~ div {
+            height: 15vh;
+        }
+
+        h2 {
+            text-shadow: #FF8327 2px 2px;
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+// Contact Footer
+
+    .contactFooter {
+
+        .wrapper {
+            height: max-content;
+        }
+
+        ul {
+            justify-content: center;
+        }
+
+        .form {
+            position: inherit;
+            margin: 50px 0;
+            box-shadow: none;
+            border: double 10px #ff8327;
+            width: 100%;
+
+            .nameEmail {
+                input[type="text"],
+                input[type="email"] {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    
 }
 
 /* Landscape phones and down */
@@ -123,19 +174,11 @@
 // header
 
     header {
-
-        img {
-            width: 90%;
-            border: double 10px #ff8327;
-        }
-    }
-
-// nav 
     
     nav {
         align-items: start;
         padding: 40px 0 0;
-
+        height: 240px;
 
         .mainMenu {
             

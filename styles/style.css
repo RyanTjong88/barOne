@@ -285,8 +285,8 @@ button {
   letter-spacing: 1.9px;
   padding: 12px 35px;
   margin: 35px 0 90px;
-  -webkit-transition: background-color 2s, color 2s;
-  transition: background-color 2s, color 2s;
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color 1s, color 1s;
 }
 
 button:hover, button:focus {
@@ -422,13 +422,13 @@ h1 {
   height: auto;
 }
 
-.contact {
+.contactHeader {
   background-image: url(../assets/bar-one/contact-header-1.jpg);
   background-size: cover;
   height: 70vh;
 }
 
-.contact nav ~ div {
+.contactHeader nav ~ div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,14 +445,13 @@ h1 {
   height: 38vh;
 }
 
-.contact h2 {
+.contactHeader h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 55%;
 }
 
 .mainContainerOne {
@@ -636,44 +635,96 @@ footer .wrapper img {
   width: calc((100% / 3) - 25px);
 }
 
-footer {
+.contactFooter {
   background-color: #181717;
 }
 
-footer .wrapper {
+.contactFooter .wrapper {
   padding-bottom: 0;
   height: 470px;
 }
 
-footer ul {
+.contactFooter ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer ul li {
+.contactFooter ul li {
   font-size: 3rem;
   padding-right: 20px;
   height: 40px;
 }
 
-footer ul li a {
+.contactFooter ul li a {
   color: #FFF;
   padding: 0;
 }
 
-footer p:nth-of-type(1) {
+.contactFooter ul li a:hover, .contactFooter ul li a:focus {
+  color: #FF8327;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.contactFooter p:nth-of-type(1) {
   padding: 20px 0;
 }
 
-footer .form {
-  background-color: #220303;
+.contactFooter .form {
+  background-color: #520a0a;
   width: 65%;
   height: 500px;
   position: relative;
   bottom: 250px;
   -webkit-box-shadow: #FF8327 20px 20px;
           box-shadow: #FF8327 20px 20px;
+  padding: 40px;
+}
+
+.contactFooter .form .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactFooter .form .nameEmail input[type="text"],
+.contactFooter .form .nameEmail input[type="email"] {
+  font: 700 4rem 'Chathura', sans-serif;
+  background-color: transparent;
+  color: #FFF;
+  width: calc((100% / 2 ) - 20px);
+  height: 50px;
+  padding: 0 0 0 20px;
+  border: transparent;
+  border-bottom: solid;
+}
+
+.contactFooter .form .message {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.contactFooter .form .message textarea[name="userFeedback"] {
+  font: 700 4rem 'Chathura', sans-serif;
+  background-color: transparent;
+  color: #FFF;
+  border: 3px solid #FFF;
+  padding: 0   0 0 20px;
+  width: 100%;
+  height: 250px;
+  resize: none;
+}
+
+.contactFooter .form button {
+  width: 100%;
 }
 
 @media (max-width: 1041px) {
@@ -714,12 +765,15 @@ footer .form {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  header nav {
-    height: 240px;
+    height: 70vh;
   }
   header nav a {
     padding: 0;
+  }
+  header nav ~ div {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   header h1 {
     font-size: 18rem;
@@ -731,8 +785,9 @@ footer .form {
     height: 170px;
   }
   header img {
-    bottom: 5px;
+    bottom: 130px;
     right: 5%;
+    width: 90%;
   }
   .mainContainerThree .contentOne h3 {
     padding: 80px 0 50px;
@@ -750,6 +805,39 @@ footer .form {
     border: double 10px #ff8327;
     width: 70%;
   }
+  .contactHeader {
+    height: 50vh;
+  }
+  .contactHeader nav ~ div {
+    height: 15vh;
+  }
+  .contactHeader h2 {
+    text-shadow: #FF8327 2px 2px;
+    display: inline-block;
+    width: 100%;
+  }
+  .contactFooter .wrapper {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .contactFooter ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactFooter .form {
+    position: inherit;
+    margin: 50px 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: double 10px #ff8327;
+    width: 100%;
+  }
+  .contactFooter .form .nameEmail input[type="text"],
+  .contactFooter .form .nameEmail input[type="email"] {
+    padding: 0;
+  }
 }
 
 /* Landscape phones and down */
@@ -758,15 +846,12 @@ footer .form {
     font-size: 3.4rem;
     text-align: center;
   }
-  header img {
-    width: 90%;
-    border: double 10px #ff8327;
-  }
   nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
     padding: 40px 0 0;
+    height: 240px;
   }
   nav .mainMenu .hide {
     display: none;
