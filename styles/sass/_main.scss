@@ -50,39 +50,46 @@
 
     .wrapper {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-
-        > div {
-            width: 40%;
-            position: relative;
-
-            h3 {
-                @include h3Color(#FFF);
-                padding: 80px 0 30px;
-            }
-
-            .align {
-                text-align: right;
-            }
-        }
+        justify-content: space-between;
 
         .containerTwoImg1 {
+            position: relative;
+            width: 630px;
+            right: 118px;
+            bottom: 35px;
 
             img {
-                position: relative;
-                top: -50px;
                 width: 100%;
                 box-shadow: #FF8327 25px 25px;
+            }
+        }
+            
+        .containerTwoContent {
+            width: 40%;
+            min-width: 470px;
+            
+            h3 {
+                @include h3Color(#FFF);
+                padding: 70px 0 10px;
+            }
+
+            .buttonOne {
+                margin-bottom: 0;
+            }
+            
+            .align {
+                text-align: right;
             }
         }
         
         .containerTwoImg2 {
 
             img {
-                position: relative;
-                bottom: -50px;
-                width: 100%;
+                position: absolute;
+                bottom: -40px;
+                right: 0px;
+                width: 41.6%;
                 box-shadow: #FF8327 -25px 25px;
             }
         }

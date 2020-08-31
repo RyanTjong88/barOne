@@ -1,4 +1,25 @@
 // global blog.html
+
+.blogHeader {
+    background-image: url(../assets/bar-one/blog-header-1.jpg);
+    height: 73vh;
+    background-size: cover;
+    background-position: center;
+
+    nav ~ div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 38vh;
+    }
+
+    h2 {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
 .blog {
 
     main, 
@@ -14,74 +35,145 @@
     h4 {
         color: #ff8327;
         font-size: 4rem;
-        letter-spacing: 2.2px;
+        letter-spacing: 2.4px;
         line-height: 2rem;
+        padding: 0 0 15px 30px;
     }
 }
 
-//  main
+//  main 
 
 .grid {
-    // margin: 100px;
-    display: grid;
-    grid-template-columns: 34% 66%;
-    // grid-template-rows: repeat(3, auto);
-    grid-auto-flow: row;
-    // grid-auto-rows: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .gridOne {
+        width: 35%;
+        min-width: 400px;
+        
+    }
+
+    .gridTwo {
+        width: 60%;
+    }
 }
+
+//  main / gridOne
 
 .containerOne {
     background-color: #220303;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 60%;
+    justify-content: center; 
+    width: 70%;
+    padding: 0;
 
-    .blogImgOne {
-        position: relative;
-        // margin-left: -50px;
+    .gridImgOne {
+        width: 460px;
+
         img {
-            position: absolute;
-            right: 0;
+            width: 100%;
+            position: relative;
+            right: 118px;
+            bottom: 20px;
+        }
+    }
 
+    .gridOneContent {
+        padding: 0 30px 35px;
+
+        a {
+            color: #ff8327;
+            font: 700 3.9rem 'Chathura', sans-serif;
+            text-decoration: none;
+            line-height: 3rem;
+            letter-spacing: 1.9px;
+            padding-bottom: 31px;
+            display: inline-block;
+        }
+
+        ul li {
+            font-size: 2rem ;
+            color: #ff8327;
+            list-style: inherit;
+            margin-left: 30px;
         }
     }
 }
 
+// main /gridTwo
+
 .gridTwo {
     border-bottom: solid 10px #ff8327;
     border-left: solid 10px #ff8327;
+
+    .gridImgTwo {
+        width: 100%;
+        height: 420px;
+        
+        img {
+            width: 98.6%;
+            position: relative;
+            left: 11px;
+            bottom: 250px;
+            box-shadow: #ff8327 -20px 20px;
+        }
+    }
+    
+    .wrapperTwo {
+        padding: 20px 100px;
+    }
+
+    .containerTwo {
+        
+        p {
+            padding: 20px;   
+        }
+
+        p:last-child {
+            padding-bottom: 80px;
+        }
+            
+        .date {
+            color: #ff8327;
+        }
+    }
 }
+
+// Comments Section
 
 .commentSection,
 .form {
     width: 60%;
 }
 
-// Comments Section
-
-.blog .wrapper {
+.containerThree.wrapper {
     display: flex;
+    justify-content: flex-end;
+}
+
+.commentSection {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     padding: 60px 0 0;
 }
 
 .commentOne {
-    padding: 20px 0 50px;
+    padding: 20px 0 100px;
 }
 .commentOne,
 .commentTwo {
     display: flex;
     align-content: center;
 
-    > div {
+    :nth-child(2) {
         padding-left: 30px;
     }
 }
 
 // footer
-.blog footer {
+.blogFooter {
     padding: 0;
 
     .wrapper {
@@ -91,15 +183,9 @@
     }
 }
 
-.wrapper {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 0 80px;
-}
-
 .form {
     width: 65%;
-    height: 500px;
+    height: max-content;
     bottom: 250px;
     padding: 40px;
 
