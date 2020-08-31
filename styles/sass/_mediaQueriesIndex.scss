@@ -63,10 +63,6 @@
             a {
                 padding: 0;
             }
-
-            // ~ div {
-            //     height: max-content;
-            // }
         }
 
         h1 {
@@ -175,27 +171,31 @@
 
     header {
     
-    nav {
-        align-items: start;
-        padding: 40px 0 0;
-        height: 240px;
+        nav {
+            align-items: start;
+            padding: 40px 0 0;
+            height: 240px;
 
-        .mainMenu {
-            
-            .hide {
-                display: none;
+            ~ div {
+                height: 55vh;
             }
-            
-            .logoA {
-                font-size: 8rem;
-            }
-            
-            .subMenu {
-                display: inherit;
+
+            .mainMenu {
+                
+                .hide {
+                    display: none;
+                }
+                
+                .logoA {
+                    font-size: 8rem;
+                }
+                
+                .subMenu {
+                    display: inherit;
+                }
             }
         }
     }
-
 // main / sectionOne
 
     .mainContainerOne {
